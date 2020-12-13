@@ -1,0 +1,101 @@
+{
+	"info": {
+		"_postman_id": "df1d3cb0-68c9-4f5f-9718-e409cb4699a8",
+		"name": "NexR",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add Measurement",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n   {\n      \"name\":\"bodyHeight\",\n      \"value\":1.789\n   },\n   {\n      \"name\":\"crotchHeight\",\n      \"value\":0.709\n   },\n   {\n      \"name\":\"armpitLeftHeight\",\n      \"value\":1.278\n   },\n   {\n      \"name\":\"armpitRightHeight\",\n      \"value\":1.245\n   },\n   {\n      \"name\":\"neckBaseFrontHeight\",\n      \"value\":1.486\n   },\n   {\n      \"name\":\"neckBaseBackHeight\",\n      \"value\":1.533\n   },\n   {\n      \"name\":\"neckBaseGirth\",\n      \"value\":0.743\n   },\n   {\n      \"name\":\"midNeckHeight\",\n      \"value\":1.518\n   },\n   {\n      \"name\":\"midNeckGirth\",\n      \"value\":0.468\n   },\n   {\n      \"name\":\"chestHeight\",\n      \"value\":1.314\n   },\n   {\n      \"name\":\"chestGirth\",\n      \"value\":1.288\n   },\n   {\n      \"name\":\"naturalWaistHeight\",\n      \"value\":1.123\n   },\n   {\n      \"name\":\"naturalWaistGirth\",\n      \"value\":1.184\n   },\n   {\n      \"name\":\"seatGirthHeight\",\n      \"value\":0.809\n   },\n   {\n      \"name\":\"seatGirth\",\n      \"value\":1.256\n   },\n   {\n      \"name\":\"highHipHeight\",\n      \"value\":1.063\n   },\n   {\n      \"name\":\"highHipGirth\",\n      \"value\":1.205\n   },\n   {\n      \"name\":\"maxHipHeight\",\n      \"value\":0.908\n   },\n   {\n      \"name\":\"maxHipGirth\",\n      \"value\":1.245\n   },\n   {\n      \"name\":\"naturalWaistRise\",\n      \"value\":1.062\n   },\n   {\n      \"name\":\"naturalWaistFrontRise\",\n      \"value\":0.532\n   },\n   {\n      \"name\":\"naturalWaistBackRise\",\n      \"value\":0.53\n   },\n   {\n      \"name\":\"shirtLength\",\n      \"value\":0.711\n   },\n   {\n      \"name\":\"inseamLeftLength\",\n      \"value\":0.768\n   },\n   {\n      \"name\":\"inseamRightLength\",\n      \"value\":0.762\n   },\n   {\n      \"name\":\"outseamLeftLength\",\n      \"value\":1.16\n   },\n   {\n      \"name\":\"outseamRightLength\",\n      \"value\":1.165\n   },\n   {\n      \"name\":\"thighLeftGirth\",\n      \"value\":0.747\n   },\n   {\n      \"name\":\"thighRightGirth\",\n      \"value\":0.759\n   },\n   {\n      \"name\":\"wristLeftGirth\",\n      \"value\":0.203\n   },\n   {\n      \"name\":\"wristRightGirth\",\n      \"value\":0.201\n   },\n   {\n      \"name\":\"bicepLeftGirth\",\n      \"value\":0.381\n   },\n   {\n      \"name\":\"bicepRightGirth\",\n      \"value\":0.379\n   },\n   {\n      \"name\":\"acrossBackShoulderWidthLength\",\n      \"value\":0.427\n   },\n   {\n      \"name\":\"backShoulderWidthLength\",\n      \"value\":0.49\n   },\n   {\n      \"name\":\"fullSleeveLeftLength\",\n      \"value\":0.852\n   },\n   {\n      \"name\":\"fullSleeveRightLength\",\n      \"value\":0.834\n   },\n   {\n      \"name\":\"SleeveLeftLength\",\n      \"value\":0.606\n   },\n   {\n      \"name\":\"SleeveRightLength\",\n      \"value\":0.589\n   }\n]\n"
+				},
+				"url": {
+					"raw": "http://localhost:3000/body-measurement/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"body-measurement",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Apparel",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Unisex T Shirt\",\n    \"measurements\":[\n        {\n            \"size\":\"S\",\n            \"chestLength\":18,\n            \"shirtLength\":28\n        },\n        {\n            \"size\":\"M\",\n            \"chestLength\":20,\n            \"shirtLength\":29\n        },\n        {\n            \"size\":\"L\",\n            \"chestLength\":22,\n            \"shirtLength\":30\n        },\n        {\n            \"size\":\"XL\",\n            \"chestLength\":24,\n            \"shirtLength\":31\n        },\n        {\n            \"size\":\"2XL\",\n            \"chestLength\":26,\n            \"shirtLength\":32\n        },\n        {\n            \"size\":\"3XL\",\n            \"chestLength\":28,\n            \"shirtLength\":33\n        }\n    ]\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/apparel/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"apparel",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Match",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/match/:apparelId/:userId",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"match",
+						":apparelId",
+						":userId"
+					],
+					"variable": [
+						{
+							"key": "apparelId",
+							"value": "1607893098212"
+						},
+						{
+							"key": "userId",
+							"value": "1607892712543"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

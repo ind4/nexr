@@ -1,0 +1,15 @@
+{
+    "mongo": {
+        "url": "mongodb://localhost:27017/prod",
+        "options": {
+            "useNewUrlParser": true,
+            "useUnifiedTopology": true,
+            "useCreateIndex": true,
+            "useFindAndModify": true,
+            "poolSize": 2
+        }
+    },
+    "service": {
+        "port": 8080
+    }
+}
